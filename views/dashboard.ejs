@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Todos</h1>
+
+    <ul>
+        <!-- this runs for each 'to do'(document) in the database (collection)-->
+<!--everytime it runs it creates the <li> and data-id property   that is created by Mongoose (el_id), and gives each element a span of 'delete' with a class of 'del'-->
+
+<!-- found in our app.get[ res.render('todos.ejs', {todos: todoItems, left: itemsLeft}) ]-->
+    <% orders.forEach( el => { %>
+        <li class='orders' data-id='<%=el._id%>'>
+						<span class='<%= el.completed === true ? 'completed' : 'not'%>'>Name:<%= el.name %></span>
+        
+            <span>Drink:<%= el.drink%></span>
+						<span>Milk:<%= el.milk %></span>
+						<span>Allergies:<%= el.allergies %></span>
+
+
+
+            <span class='del'> Delete </span>
+        </li>
+    <% }) %>    
+    </ul>
+
+ 
+
+    <script src="js/main.js"></script>
+</body>
+</html>
