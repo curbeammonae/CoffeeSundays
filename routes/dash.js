@@ -6,5 +6,9 @@ const dashController = require('../controllers/dash')//this is the code located 
 
 
 router.get('/', dashController.getOrder) //router hands the request to the      homeController and runs the method of getIndex
+router.put('/markComplete', dashController.markComplete)
+
+router.put('/markIncomplete', dashController.markIncomplete)
+
 
 module.exports = router

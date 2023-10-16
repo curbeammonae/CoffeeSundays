@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dash.css">
 </head>
 <body>
-    <h1>Todos</h1>
+    <h1>orders</h1>
 
     <ul>
         <!-- this runs for each 'to do'(document) in the database (collection)-->
@@ -17,12 +17,12 @@
 <!-- found in our app.get[ res.render('todos.ejs', {todos: todoItems, left: itemsLeft}) ]-->
     <% orders.forEach( el => { %>
         <li class='orders' data-id='<%=el._id%>'>
-						<span class='<%= el.completed === true ? 'completed' : 'not'%>'>Name:<%= el.name %></span>
+						<span class='<%= el.completed === true ? 'completed' : 'not'%>'>Name:<%= el.name %>
         
-            <span>Drink:<%= el.drink%></span>
-						<span>Milk:<%= el.milk %></span>
-						<span>Allergies:<%= el.allergies %></span>
-
+           Drink:<%= el.drink%>
+						Milk:<%= el.milk %>
+						Allergies:<%= el.allergies %>
+                    </span>
 
 
             <span class='del'> Delete </span>
@@ -30,8 +30,8 @@
     <% }) %>    
     </ul>
 
- 
+    
 
-    <script src="js/main.js"></script>
+    <script src="js/dash.js"></script>
 </body>
 </html>

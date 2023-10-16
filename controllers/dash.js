@@ -22,5 +22,35 @@ module.exports = {
             console.log(err)
         }
     },
+    markComplete: async (req, res)=>{
+        try{
+//Todo(database).findOneAndUpdate
+//find the document who's 'id' matches the id we just sent (req.body.todoIdFrom)from our client side javascript
+            await Order.findOneAndUpdate({_id:req.body.orderIdFromJSFile},{
+//update the document's 'completed' to 'true;
+                completed: true
+            })
+            console.log('Marked Complete')
+            res.json('Marked Complete')
+        }catch(err){
+            console.log(err)
+        }
+    },
+    markIncomplete: async (req, res)=>{
+        try{
+//Todo(database).findOneAndUpdate
+//find the document who's 'id' matches the id we just sent (req.body.todoIdFrom)from our client side javascript
+            await Order.findOneAndUpdate({_id:req.body.orderIdFromJSFile},{
+//update the document's 'completed' to 'false';
+
+                completed: false
+            })
+            console.log('Marked Incomplete')
+            res.json('Marked Incomplete')
+        }catch(err){
+            console.log(err)
+        }
+    },
+
 
 }
