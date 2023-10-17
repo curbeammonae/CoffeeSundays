@@ -15,7 +15,7 @@
 <!--everytime it runs it creates the <li> and data-id property   that is created by Mongoose (el_id), and gives each element a span of 'delete' with a class of 'del'-->
 
 <!-- found in our app.get[ res.render('todos.ejs', {todos: todoItems, left: itemsLeft}) ]-->
-    <% orders.forEach( el => { %>
+    <!-- <% orders.forEach( el => { %>
         <li class='orders' data-id='<%=el._id%>'>
 						<span class='<%= el.completed === true ? 'completed' : 'not'%>'>Name:<%= el.name %>
         
@@ -27,8 +27,47 @@
 
             <span class='del'> Delete </span>
         </li>
-    <% }) %>    
+    <% }) %>     -->
     </ul>
+    <h2>pending orders</h2>
+    <ul>
+        <% for(let i=0; i < orders.length; i++) {%>
+            <li class='orders' data-id='<%=orders[i]._id%>'>
+                <% if(orders[i].completed === false) {%>
+                    <span class='not'>Name: <%= orders[i].name %> \ Drink: <%= orders[i].drink%>
+						\Milk: <%= orders[i].milk %>
+						\Allergies: <%= orders[i].allergies %></span>
+                    
+                
+                <% } %>    
+                <span class='del'> Delete </span>
+
+
+            </li>
+        <% } %>
+    
+
+
+
+    
+
+
+
+<h2>completed</h2>
+    <ul >
+        <% for(let i=0; i < orders.length; i++) {%>
+            <li class='orders' data-id='<%=orders[i]._id%>'>
+                <% if(orders[i].completed === true) {%>
+                    <span class='completed'>Name:<%= orders[i].name %> Drink:<%= orders[i].drink%>
+						Milk:<%= orders[i].milk %>
+						Allergies:<%= orders[i].allergies %></span>
+                
+                <% } %>    
+                <span class='del'> Delete </span>
+
+            </li>
+        <% } %>
+    
 
     
 
