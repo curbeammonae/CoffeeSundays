@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/dash.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>orders</h1>
@@ -36,7 +39,7 @@
                 <% if(orders[i].completed === false) {%>
                     <span class='not'>Name: <%= orders[i].name %> \ Drink: <%= orders[i].drink%>
 						\Milk: <%= orders[i].milk %>
-						\Allergies: <%= orders[i].allergies %></span>
+						\Special Requests: <%= orders[i].requests %></span>
                     
                 
                 <% } %>    
@@ -60,7 +63,7 @@
                 <% if(orders[i].completed === true) {%>
                     <span class='completed'>Name:<%= orders[i].name %> Drink:<%= orders[i].drink%>
 						Milk:<%= orders[i].milk %>
-						Allergies:<%= orders[i].allergies %></span>
+						Requests:<%= orders[i].requests %></span>
                 
                 <% } %>    
                 <span class='del'> Delete </span>

@@ -5,50 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Serif:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
+    
+    
+    
+    <title>Coffee Sundays</title>
 </head>
 <body>
-    <h1>Welcome to Coffee Sundays</h1>
-    <h2>Menu</h2>
+  <h1>Todays Offerings</h1>
+  <div class="bsection">
+    
+  <div class="asection">
+
+<img src="/images/cs.png" alt="welcome to coffee sundays"/>
+</div>
+<div class="asection">
+
     <div class='drinks'>
       <div class='outline-drinks'>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4tM1hV69WkMEL9mcPwB-9RJcgu6ovSRt-Zw&usqp=CAU">
-      <h3>Espresso</h3>
-      <span>Dark, rich espresso lies in wait under a smoothed and stretched layer of thick milk foam. An alchemy of barista artistry and craft.</span>
+      <h2>Hairy Coochie Girl</h2>
+      <p> Ceremony Coffee Roastery, Housemade Rosemary Caramel Syrup with your choice of milk</p>
       </div>
       <div class='outline-drinks'>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4tM1hV69WkMEL9mcPwB-9RJcgu6ovSRt-Zw&usqp=CAU">
-        <h3>Espresso</h3>
-        <span>Dark, rich espresso lies in wait under a smoothed and stretched layer of thick milk foam. An alchemy of barista artistry and craft.</span>
+        <h2>Ol-love you</h2>
+        <p>Ceremony Coffee Roastery, Taharka Vanilla Bean Ice-Cream with a drizzle of Housemade Lemon Infused Olive Oil </p>
         </div>
       <div class='outline-drinks'>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4tM1hV69WkMEL9mcPwB-9RJcgu6ovSRt-Zw&usqp=CAU">
-        <h3>Espresso</h3>
-        <span>Dark, rich espresso lies in wait under a smoothed and stretched layer of thick milk foam. An alchemy of barista artistry and craft.</span>
-        </div>
+        <h2>Jam Sesh</h2>
+        <p>
+          Wight Tea Co. Matcha, Oat-milk, Housemade Strawberry Puree with a drizzle of Honey
+        </p>
+              
+      </div>
       <div class='outline-drinks'>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4tM1hV69WkMEL9mcPwB-9RJcgu6ovSRt-Zw&usqp=CAU">
-        <h3>Espresso</h3>
-        <span>Dark, rich espresso lies in wait under a smoothed and stretched layer of thick milk foam. An alchemy of barista artistry and craft.</span>
-        </div>
+        <h2>Warm me Up</h2>
+        <p>
+          Wight Tea Co. Lapsang Souchong Black Tea, Cardomon, Star Anise, Cinnamon, Nutmeg, Cloves, Oat-milk, a Hint of Vanilla
+        </p>        
+      </div>
     </div>
-    </div>
-    <div>
+  </div>
+
+
+    
+   
+      <div class="asection">
+
+      <h2>Order Here</h2>
       <div class='formz'>
     <form action="/createOrder" method="POST" name="order">
-      <span>Name:</span><input type = 'text' name="name">
-      <span>Drink:</span><input type = 'text' name="drink">
-      
-      <span>Almond or Oat Milk?</span><input type="text" name="milk">
-      <span>Allergies?:</span><input type="text" name="allergies">
+      <span>Name</span><input type = 'text' name="name">
+      <span>Drink</span>
+      <select name="drink" >
+        <option value="  "></option>
+        <option value="Hairy Girl">Hairy Girl</option>
+        <option value="Ol-love you">Ol-love you</option>
+        <option value="Jam Sesh">Jam Sesh</option>
+        <option value="Warm me Up">Warm me Up</option>
+      </select>
+
+
+
+
+      <span>Milk</span>
+      <select name="milk" >
+        <option value="  "></option>
+        <option value="whole">Whole</option>
+        <option value="Coconut">Coconut</option>
+        <option value="oat">Oat</option>
+      </select>
+      <span>Special Request</span><input type="text" name="requests">
       <input type="submit">
     </form>
       </div>
-      <h5</h5>
+     
       </div>
-  
+  </div>
     <script src="js/script.js"></script>
   
+  </div>
    
   </body>
   

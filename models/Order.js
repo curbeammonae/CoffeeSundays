@@ -16,7 +16,7 @@ milk: {
 	type: String, 
 	required: true,
 },
-allergies: {
+requests: {
 	type:String,
 	required: false,
 },

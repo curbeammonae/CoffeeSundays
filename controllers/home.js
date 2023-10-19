@@ -17,7 +17,7 @@ createOrder: async (req, res)=>{
             name: req.body.name,
             drink: req.body.drink,
             milk: req.body.milk,
-            allergies: req.body.allergies,
+            requests: req.body.requests,
             completed:false,
 
 
