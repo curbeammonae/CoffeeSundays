@@ -6,5 +6,12 @@
     color: gray;
 }
 .not{
-    text-decoration: underline;
+    
+    color: red;
+
+}
+
+h1, ul, li,h2{
+    text-align: center;
+    list-style-type: none
 }
