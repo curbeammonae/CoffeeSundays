@@ -65,10 +65,10 @@
 
       <h2>Order Here</h2>
       <div class='formz'>
-    <form action="/createOrder" method="POST" name="order">
-      <span>Name</span><input type = 'text' name="name">
+    <form action="/createOrder" method="POST" name="order" required >
+      <span>Name</span><input type = 'text' name="name" required>
       <span>Drink</span>
-      <select name="drink" >
+      <select name="drink" required>
         <option value="  "></option>
         <option value="Hairy Coochie Girl ">Hairy Coochie Girl</option>
         <option value="Ol-love you">Ol-love you</option>
@@ -80,7 +80,7 @@
 
 
       <span>Milk</span>
-      <select name="milk" >
+      <select name="milk" required>
         <option value="  "></option>
         <option value="whole">Whole</option>
         <option value="Coconut">Coconut</option>
