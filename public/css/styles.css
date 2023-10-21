@@ -32,6 +32,9 @@ justify-content: space-between;
   #desktop-image{
     display: none;
   }
+  h1{
+    margin-top: 0;
+  }
 
   
   .bsection{
