@@ -22,7 +22,18 @@ justify-content: space-between;
 
 }
 
+@media(min-width: 700px){
+  #mobile-image{
+    display: none;
+  }
+}
+
 @media (max-width: 420px) {
+  #desktop-image{
+    display: none;
+  }
+
+  
   .bsection{
     display: flex;
     flex-direction: column;
@@ -41,7 +52,10 @@ justify-content: space-between;
   }
  
   img{
-    width: 99%;
+    /* width: 100%; */
+    height: auto;
+
+  max-width: 100%;
   }
  
 }
